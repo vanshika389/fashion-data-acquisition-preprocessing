@@ -1,51 +1,41 @@
-# Fashion Data Acquisition & Preprocessing
+# Fashion EDA: Trend Exploration and Visualisation
 
-A beginner-friendly, reproducible data-science project demonstrating how to acquire, profile, clean, validate, and prepare fashion product data for analysis.
+This folder contains a reproducible exploratory data analysis (EDA) example for fashion trend analysis.
 
-## Project contents
-- `data/raw/fashion_products_sample.csv` — small **synthetic demonstration dataset** containing intentional missing values, duplicate rows, inconsistent category labels, and invalid values.
-- `scripts/preprocess.py` — reusable pandas preprocessing pipeline.
-- `data/processed/` — output folder for cleaned data and a quality report.
-- `data_dictionary.md` — column definitions and handling decisions.
-- `Fashion_Data_Acquisition_Preprocessing_Guide.docx` — detailed methodology report (if included in the ZIP).
+## Files
+- `notebooks/fashion_eda.ipynb` — step-by-step EDA notebook with summary statistics, data-quality checks, trend lines, bar and pie charts, scatter plots, correlation, and IQR outlier checks.
+- `data/fashion_eda_sample.csv` — synthetic example data.
+- `reports/Fashion_Exploratory_Data_Analysis_Report.docx` — written report (add this file from the report download if not included).
 - `requirements.txt` — Python dependencies.
 
-## Quick start
+## Run it
 1. Install Python 3.10+.
-2. In a terminal, install dependencies:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Run:
+3. Start Jupyter:
    ```bash
-   python scripts/preprocess.py
+   jupyter notebook
    ```
-4. Inspect `data/processed/fashion_products_cleaned.csv` and `data/processed/quality_report.txt`.
+4. Open `notebooks/fashion_eda.ipynb` and run all cells.
 
-## Dataset note
-The included rows are synthetic and are for demonstrating the workflow only. They are **not real retailer sales, customer records, or market evidence**. For a real analysis, replace the sample with a dataset whose licence and source are documented.
+## Data disclaimer
+The bundled CSV is **synthetic demonstration data**, not actual market or retailer data. It is included to show the EDA workflow and charting techniques. Do not present its values as real fashion-industry findings. Before making market claims, replace it with a publicly available dataset and document the source, licence, retrieval date, geographic coverage, and limitations.
 
-## Suggested public data sources
+## Potential public sources
 - Google Trends: https://trends.google.com/trends/
 - UN Comtrade: https://comtradeplus.un.org/
 - World Bank Open Data: https://data.worldbank.org/
 - Eurostat: https://ec.europa.eu/eurostat/
 - India Open Government Data: https://www.data.gov.in/
-- Kaggle Datasets: https://www.kaggle.com/datasets
+- Kaggle: https://www.kaggle.com/datasets
 - Hugging Face Datasets: https://huggingface.co/datasets
 - Open-Meteo: https://open-meteo.com/
 
-Always check terms, licence, permitted reuse, geographic coverage, and update dates. Use official downloads/APIs where available; do not bypass access controls.
-
-## Pipeline steps
-1. Load raw CSV and preserve it unchanged.
-2. Standardise column names and text fields.
-3. Parse price and rating as numeric.
-4. Identify and remove exact duplicate rows.
-5. Flag impossible/invalid values; convert invalid values to missing.
-6. Impute numeric values with medians and categorical values with `Unknown`.
-7. Engineer `discount_pct` and `price_band`.
-8. Validate key fields and export cleaned data plus a quality report.
-
-## Limitations
-This is a preprocessing demonstration, not a production forecasting model. Imputation decisions must be reconsidered for each dataset and business question. For modelling, fit imputation/scaling steps on training data only to avoid data leakage.
+## Suggested EDA questions
+- How does search interest change over time?
+- Which categories dominate the selected dataset?
+- How do price, rating and review count relate?
+- Which observations are outliers and do they represent errors or valid premium products?
+- Do trends persist across multiple periods and independent sources?

@@ -2,5 +2,3 @@ __pycache__/
 .venv/
 .env
 .ipynb_checkpoints/
-data/processed/*
-!data/processed/.gitkeep
