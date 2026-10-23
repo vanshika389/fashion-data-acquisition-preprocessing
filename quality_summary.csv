@@ -1,0 +1,16 @@
+metric,field,value,notes
+missing_values,sku,0,0.0% of 22 records
+missing_values,product_name,0,0.0% of 22 records
+missing_values,category,0,0.0% of 22 records
+missing_values,size,1,4.5% of 22 records
+missing_values,colour,0,0.0% of 22 records
+missing_values,material,0,0.0% of 22 records
+missing_values,price_inr,0,0.0% of 22 records
+missing_values,stock_qty,1,4.5% of 22 records
+missing_values,fabric_gsm,0,0.0% of 22 records
+missing_values,supplier_id,0,0.0% of 22 records
+missing_values,last_updated,0,0.0% of 22 records
+exact_duplicate_rows,all_columns,0,Exact row duplicates in raw sample
+duplicate_sku_rows,sku,0,Review business key before removal
+flagged_issue_rows,all_fields,4,Rows with one or more detected issues
+total_issue_flags,all_fields,6,A row may have multiple issue flags

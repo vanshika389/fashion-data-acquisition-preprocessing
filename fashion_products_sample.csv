@@ -1,22 +1,23 @@
-product_id,product_name,category,colour,list_price,sale_price,rating,review_count,availability
-P001,Linen Shirt,Tops,blue,1499,1199.0,4.4,128,In Stock
-P002,Cotton Tee,T-shirt,white,699,499.0,4.1,87,in stock
-P003,Wide-Leg Trousers,Bottoms,Black,1899,1599.0,4.6,45,Out of Stock
-P004,Floral Dress,Dresses,pink,2499,1999.0,4.8,203,In Stock
-P005,Knit Cardigan,knitwear,Cream,2199,1799.0,5.2,31,In Stock
-P006,Denim Jacket,Outerwear,Blue,-999,1799.0,4.0,56,In Stock
-P007,Pleated Skirt,Bottoms,Green,1599,1299.0,,22,In Stock
-P008,Satin Blouse,tops,Ivory,1399,,4.3,-4,In Stock
-P009,Basic Tee,T shirts,Black,599,399.0,3.9,64,in stock
-P010,Wool Coat,Outerwear,Camel,4999,4499.0,4.7,18,Preorder
-P011,Linen Shirt,Tops,blue,1499,1199.0,4.4,128,In Stock
-P012,  Cotton Tee  , T-shirt , white ,799,499.0,4.1,87,IN STOCK
-P013,Wrap Dress,Dresses,Red,1899,1599.0,4.2,71,In Stock
-P014,Sport Leggings,Activewear,Black,999,799.0,3.8,92,In Stock
-P015,Leather Belt,Accessories,Brown,799,599.0,4.0,12,In Stock
-P016,Canvas Tote,Accessories,Natural,499,349.0,4.5,144,In Stock
-P017,Silk Scarf,Accessories,Navy,1299,999.0,4.6,37,In Stock
-P018,Puffer Jacket,Outerwear,Olive,3299,2799.0,4.3,81,Out of Stock
-P019,Midi Skirt,Bottoms,Black,1799,1499.0,4.1,53,In Stock
-P020,Running Shorts,Activewear,Grey,899,699.0,3.7,38,In Stock
-P001,Linen Shirt,Tops,blue,1499,1199.0,4.4,128,In Stock
+sku,product_name,category,size,colour,material,price_inr,stock_qty,fabric_gsm,supplier_id,last_updated
+F-1001,Classic Cotton Tee,T-Shirt,M,Navy,100% Cotton,799,42.0,180,SUP-01,2026-09-10
+F-1002,Linen Blend Shirt,Shirt,L,Natural,"55% Linen, 45% Cotton",1499,18.0,155,SUP-02,2026-09-11
+F-1003,Relaxed Denim Jeans,Jeans,32,Indigo,"98% Cotton, 2% Elastane",2299,12.0,340,SUP-01,2026-09-11
+F-1004,Ribbed Tank Top,Tank Top,S,Black,"95% Cotton, 5% Elastane",599,55.0,210,SUP-03,2026-09-12
+F-1005,Wool Blend Coat,Coat,M,Charcoal,"70% Wool, 30% Polyester",5999,7.0,420,SUP-04,2026-09-12
+F-1006,Printed Summer Dress,Dress,S,Floral,100% Viscose,1899,23.0,125,SUP-02,2026-09-13
+F-1007,Oversized Hoodie,Hoodie,XL,Grey,"80% Cotton, 20% Polyester",1799,31.0,320,SUP-03,2026-09-13
+F-1008,Silk Scarf,Accessory,One Size,Burgundy,100% Silk,1299,16.0,65,SUP-04,2026-09-14
+F-1009,Athletic Leggings,Leggings,M,Black,"78% Nylon, 22% Elastane",999,39.0,250,SUP-03,2026-09-14
+F-1010,Pleated Skirt,Skirt,M,Olive,100% Polyester,1199,24.0,190,SUP-02,2026-09-15
+F-1011,Classic Cotton Tee,T-Shirt,M,Navy,100% Cotton,799,42.0,180,SUP-01,2026-09-10
+F-1012,Lightweight Jacket,Jacket,L,Black,100% Polyester,-1299,-4.0,18000,SUP-05,2026-09-16
+F-1013,Everyday Kurta,kurta ,XL, navy blue ,100% Cotton,1099,21.0,165,SUP-01,2026-09-17
+F-1014,Festive Saree,Saree,,Maroon,Silk Blend,3499,8.0,95,SUP-06,2026-09-17
+F-1015,Cotton Trousers,Trousers,M,Beige,"60% Cotton, 40% Linen",1599,14.0,205,SUP-02,2026-09-18
+F-1016,Graphic Tee,T-Shirt,L,White,100% Cotton,899,28.0,175,SUP-01,2026-09-18
+F-1017,Party Dress,Dress,M,Black,"95% Polyester, 5% Elastane",2499,11.0,150,SUP-03,2026-09-19
+F-1018,Premium Denim Jeans,Jeans,34,Blue,"99% Cotton, 1% Elastane",2799,9.0,360,SUP-01,2026-09-19
+F-1019,Summer Top,Top,S,Pink,100% Cotton,899,,140,SUP-05,2026-09-20
+F-1020,Knitted Cardigan,Cardigan,M,Cream,"60% Wool, 40% Acrylic",2899,6.0,280,SUP-04,2026-09-20
+F-1021,Cotton Shirt,Shirt,XL,White,100% Cotton,1299,19.0,165,SUP-02,2026-09-21
+F-1022,Sports Shorts,Shorts,L,Black,"88% Polyester, 12% Elastane",-1,27.0,220,SUP-03,2026-09-21

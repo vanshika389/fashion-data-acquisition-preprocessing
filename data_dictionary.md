@@ -1,19 +1,17 @@
 # Data Dictionary
 
-The sample dataset is synthetic and only intended to demonstrate data-quality handling.
+All rows in `fashion_products_sample.csv` are synthetic examples.
 
-| Column | Meaning | Expected type | Cleaning / validation |
+| Column | Type | Description | Quality considerations |
 |---|---|---|---|
-| product_id | Product identifier | string | Trim whitespace; retain as identifier, not a numeric measure |
-| product_name | Display name | string | Trim whitespace |
-| category | Product category | categorical | Trim and lowercase; map common variants |
-| colour | Product colour | categorical | Trim and title-case |
-| list_price | Original/list price | numeric | Parse numeric; negative values invalid |
-| sale_price | Current sale price | numeric | Parse numeric; negative values invalid |
-| rating | Average product rating | numeric | Valid range is 0–5; outside range set missing |
-| review_count | Number of reviews | integer | Negative values invalid |
-| availability | Availability label | categorical | Standardise labels where possible |
-
-## Engineered fields
-- `discount_pct`: `(list_price - sale_price) / list_price * 100`; only calculated when list price is positive and both prices exist.
-- `price_band`: `Budget` (< 500), `Mid-range` (500–1499.99), or `Premium` (>= 1500), based on sale price. Thresholds are illustrative and should be adapted to market and currency.
+| `sku` | string | Example product identifier | Check uniqueness against the correct business key; variants may need size/colour/market in the key. |
+| `product_name` | string | Display name | Trim whitespace; avoid overwriting original source labels in production. |
+| `category` | string | Apparel/accessory category | Normalize labels with an approved vocabulary. |
+| `size` | string | Size label or dimension | Valid values depend on product category and sizing system. |
+| `colour` | string | Colour name | Standardize spacing/case; confirm synonyms before mapping. |
+| `material` | string | Fibre/material description | Verify composition claims against an authoritative source; percentages should be checked where parseable. |
+| `price_inr` | numeric | Illustrative price in Indian rupees | Negative values require investigation; currency and tax basis must be documented. |
+| `stock_qty` | numeric | Illustrative stock quantity | Negative values may indicate adjustments/backorders depending on system semantics. |
+| `fabric_gsm` | numeric | Fabric mass in grams per square metre | Verify unit and plausibility by material/product; extreme values are investigation flags. |
+| `supplier_id` | string | Example supplier key | Check referential integrity against a supplier master table. |
+| `last_updated` | date string | Example record update date | Parse with explicit format and monitor freshness. |

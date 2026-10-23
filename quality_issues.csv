@@ -1,0 +1,7 @@
+row_number,sku,field,issue_type,observed_value,recommended_action
+15,F-1014,size,missing_value,nan,Verify against the authoritative product or supplier source; do not guess.
+20,F-1019,stock_qty,missing_value,nan,Verify against the authoritative product or supplier source; do not guess.
+13,F-1012,price_inr,negative_price,-1299,Check refunds/adjustments and source mapping; correct only with evidence.
+23,F-1022,price_inr,negative_price,-1,Check refunds/adjustments and source mapping; correct only with evidence.
+13,F-1012,stock_qty,negative_stock,-4.0,Check whether this represents backorders or an inventory adjustment.
+13,F-1012,fabric_gsm,potential_outlier_iqr,18000,Investigate units/decimal placement; an extreme value is not automatically an error.

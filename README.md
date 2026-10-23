@@ -1,33 +1,35 @@
-# Predictive Analytics for Fashion Trend Forecasting
+# Fashion Data Quality & Error Handling
 
-This repository section demonstrates a reproducible forecasting workflow for fashion trend signals using monthly time-series data.
+## Objective
+A practical, reproducible demonstration of data-quality assessment for apparel and textile product data. It checks completeness, duplicate identifiers, invalid values, inconsistent labels and potential outliers.
 
 ## Contents
-- `reports/Fashion_Predictive_Analytics_Forecasting_Report.docx` — detailed methodology report.
-- `notebooks/fashion_trend_forecasting.ipynb` — notebook demonstrating baseline forecasting, chronological holdout evaluation, MAE/RMSE, and a forecast chart.
-- `data/fashion_search_interest_demo.csv` — synthetic monthly data used only to demonstrate the code.
-- `scripts/forecast_demo.py` — runnable Python script for baseline forecasts and evaluation.
-- `requirements.txt` — Python dependencies.
+- `data/fashion_products_sample.csv` — synthetic product records with deliberately introduced quality issues.
+- `scripts/data_quality_checks.py` — Python script for profiling, issue detection, conservative standardization and report generation.
+- `reports/Fashion_Data_Quality_Error_Handling_Guide.docx` — detailed methodology report.
+- `reports/quality_issues.csv` — row-level issues detected by the script.
+- `reports/quality_summary.csv` — field-level missingness and issue summary.
+- `reports/fashion_products_standardized.csv` — standardized output with a review flag; questionable values are not silently removed.
 
-## Run the notebook
+## Run locally
+Python 3.10+ is recommended.
+
 ```bash
 pip install -r requirements.txt
-jupyter notebook
-```
-Open `notebooks/fashion_trend_forecasting.ipynb` and run all cells.
-
-Or run the script:
-```bash
-python scripts/forecast_demo.py
+python scripts/data_quality_checks.py
 ```
 
-## Important data limitation
-The bundled dataset is **synthetic demonstration data**, not actual Google Trends observations, retailer sales, or market evidence. It is intended to make the workflow runnable. For real analysis, download a consistent public series from Google Trends or another permitted source, document the query/geography/date range and terms, and replace the CSV after checking its licence and limitations.
+Run from the project root. The script writes report files to `reports/`.
 
-## Forecasting design
-- Forecast target: monthly relative search-interest index.
-- Horizon: next 3 months.
-- Baseline: seasonal-naive (same month in the prior year) when history permits; fallback to last observed value for short history.
-- Validation: chronological holdout, never random shuffle.
-- Metrics: MAE and RMSE.
-- Next step: use rolling-origin validation and compare ETS/SARIMA only after verifying sufficient history and seasonality.
+## Checks demonstrated
+- Missing required or optional values
+- Repeated SKUs (flagged for review, not blindly deleted)
+- Negative prices and stock quantities
+- Non-positive fabric GSM
+- Potential fabric GSM outliers using the IQR rule
+- Whitespace and casing normalization for category and colour
+
+## Important methodology notes
+The data is **synthetic** and intended only for demonstration. It is not real sales, inventory, supplier or textile-laboratory data. Negative stock can sometimes represent backorders or adjustments, and repeated SKUs may be valid across sizes/markets; these are flagged for investigation rather than automatically corrected. Extreme values should be checked against source units and product context before changing them.
+
+For a real dataset, document the source URL, licence, retrieval date, field definitions, units, geographic/category coverage and known limitations. Never infer business-critical composition or compliance claims without an authoritative source.
