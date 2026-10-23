@@ -1,0 +1,21 @@
+product_id,product_name,category,colour,list_price,sale_price,rating,review_count,availability,discount_pct,price_band
+P001,Linen Shirt,Tops,Blue,1499.0,1199.0,4.4,128.0,In Stock,20.01,Mid-range
+P002,Cotton Tee,Tops,White,699.0,499.0,4.1,87.0,In Stock,28.61,Budget
+P003,Wide-Leg Trousers,Bottoms,Black,1899.0,1599.0,4.6,45.0,Out of Stock,15.8,Premium
+P004,Floral Dress,Dresses,Pink,2499.0,1999.0,4.8,203.0,In Stock,20.01,Premium
+P005,Knit Cardigan,Tops,Cream,2199.0,1799.0,4.25,31.0,In Stock,18.19,Premium
+P006,Denim Jacket,Outerwear,Blue,1499.0,1799.0,4.0,56.0,In Stock,-20.01,Premium
+P007,Pleated Skirt,Bottoms,Green,1599.0,1299.0,4.25,22.0,In Stock,18.76,Mid-range
+P008,Satin Blouse,Tops,Ivory,1399.0,1199.0,4.3,64.0,In Stock,14.3,Mid-range
+P009,Basic Tee,Tops,Black,599.0,399.0,3.9,64.0,In Stock,33.39,Budget
+P010,Wool Coat,Outerwear,Camel,4999.0,4499.0,4.7,18.0,Preorder,10.0,Premium
+P011,Linen Shirt,Tops,Blue,1499.0,1199.0,4.4,128.0,In Stock,20.01,Mid-range
+P012,Cotton Tee,Tops,White,799.0,499.0,4.1,87.0,In Stock,37.55,Budget
+P013,Wrap Dress,Dresses,Red,1899.0,1599.0,4.2,71.0,In Stock,15.8,Premium
+P014,Sport Leggings,Activewear,Black,999.0,799.0,3.8,92.0,In Stock,20.02,Mid-range
+P015,Leather Belt,Accessories,Brown,799.0,599.0,4.0,12.0,In Stock,25.03,Mid-range
+P016,Canvas Tote,Accessories,Natural,499.0,349.0,4.5,144.0,In Stock,30.06,Budget
+P017,Silk Scarf,Accessories,Navy,1299.0,999.0,4.6,37.0,In Stock,23.09,Mid-range
+P018,Puffer Jacket,Outerwear,Olive,3299.0,2799.0,4.3,81.0,Out of Stock,15.16,Premium
+P019,Midi Skirt,Bottoms,Black,1799.0,1499.0,4.1,53.0,In Stock,16.68,Mid-range
+P020,Running Shorts,Activewear,Grey,899.0,699.0,3.7,38.0,In Stock,22.25,Mid-range

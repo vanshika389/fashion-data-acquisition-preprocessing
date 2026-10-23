@@ -1,0 +1,10 @@
+FASHION DATA PREPROCESSING - QUALITY REPORT
+Input file: data/raw/fashion_products_sample.csv
+Input rows: 21
+Rows after exact duplicate removal: 20
+Exact duplicate rows detected: 1
+Missing cells before cleaning: 2
+Missing cells after cleaning: 0
+Output columns: product_id, product_name, category, colour, list_price, sale_price, rating, review_count, availability, discount_pct, price_band
+
+Note: This project uses synthetic demonstration data. Imputation and category mappings are examples, not universal rules.
